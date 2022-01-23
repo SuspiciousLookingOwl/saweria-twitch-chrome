@@ -8,15 +8,13 @@ const SettingsView: Component = () => {
 		channelName: "",
 		botName: "",
 		botToken: "",
-		messageTemplate: "Thank you {donator} for your donation of {amount}! {message}",
+		messageTemplate: "{donator} donated Rp{amount}! {message}",
 	});
 
 	const [channelName, setChannelName] = createSignal("");
 	const [botName, setBotName] = createSignal("");
 	const [botToken, setBotToken] = createSignal("");
-	const [messageTemplate, setMessageTemplate] = createSignal(
-		"Thank you {donator} for your donation of {amount}! {message}"
-	);
+	const [messageTemplate, setMessageTemplate] = createSignal("");
 
 	onMount(async () => {
 		const { settings } = (await chrome.storage.local.get(["settings"])) as { settings: Settings | undefined };
