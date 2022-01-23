@@ -1,0 +1,35 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply text-gray-100 text-sm;
+	font-family: "Poppins", sans-serif !important;
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "Twitchy";
+	src: url(/font/twitchy-tv.ttf);
+}
+
+.font-brand-saweria {
+	font-family: "Comfortaa", cursive;
+}
+
+.font-brand-twitch {
+	font-family: "Twitchy";
+}
+
+::-webkit-scrollbar {
+	@apply w-[6px];
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-neutral-600;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-neutral-400;
+}
