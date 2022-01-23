@@ -13,7 +13,7 @@
 		"48": "icon48.png",
 		"16": "icon16.png"
 	},
-	"permissions": ["tabs", "scripting", "storage", "webRequest"],
+	"permissions": ["tabs", "scripting", "storage"],
 	"host_permissions": ["*://*.saweria.co/*"],
 	"background": {
 		"service_worker": "background.js",
