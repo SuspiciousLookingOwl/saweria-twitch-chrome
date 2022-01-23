@@ -1,6 +1,6 @@
 {
 	"name": "Saweria Twitch Bot",
-	"description": "Easily run a Twitch bot that sends a message to your channel when you received a donation from Saweria.",
+	"description": "Easily run a Twitch bot that sends a message to your channel when you receive a donation from Saweria.",
 	"version": "0.0.1",
 	"manifest_version": 3,
 	"action": {
